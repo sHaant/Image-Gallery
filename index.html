@@ -3,12 +3,19 @@
 <head>
 	<title>Image Gallery</title>
 	<link rel="stylesheet" href="css/imagegallery.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<script src="js/lightbox.min.js"></script>
 </head>
 <body>
 
-	<div class = "wrapper">
+	<div class = "menu">
 
 		<nav>
+			<ul class="header">
+				<li><a href="#">ImageGallery</a></li>
+			</ul>
+
+
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
@@ -17,53 +24,79 @@
 			</ul>
 		</nav>
 
+	</div>
+
+	<div class="box1">
+			<h1>Some of my Favourite Series</h1> 
+	</div>
+
+	<div class="wrapper">
+
+
+
 		<div class= "gallery">
-			<a target="_blank" href="images/dexter.jpg">
-				<img src="images/dexter.jpg" alt="Dexter" width="400">
+			<a target="_blank" href="images/dexter.jpg" data-lightbox="gallery">
+				<img id="myImg" src="images/dexter.jpg" alt="Dexter" width="300">
 			</a>
 		</div>
 
 		<div class= "gallery">
-			<a target="_blank" href="images/True_Detective.jpg">
-				<img src="images/True_Detective.jpg" alt="true detective" width="400">
+			<a data-lightbox="galleryone" href="images/True_Detective.jpg">
+				<img id="myImg" src="images/True_Detective.jpg" alt="true detective" width="300">
 			</a>
 		</div>
 
 		<div class="gallery">
 			<a target="_blank" href="images/mentalist.jpg">
-			<img src="Images/mentalist.jpg" alt="The Mentalist" width="400">
+			<img id = "myImg" src="Images/mentalist.jpg" alt="The Mentalist" width="300">
 			</a>
 		</div>
 
 		<div class="gallery">
 			<a target="_blank" href="images/mr_robot.jpg">
-			<img src="Images/mr_robot.jpg" alt="Mr. Robot" width="400">
+			<img id="myImg" src="Images/mr_robot.jpg" alt="Mr. Robot" width="300">
 			</a>
 		</div>
 
 		<div class="gallery">
 			<a target="_blank" href="images/sherlock.jpg">
-			<img src="Images/sherlock.jpg" alt="Sherlock" width="400">
+			<img id="myImg" src="Images/sherlock.jpg" alt="Sherlock" width="300">
 			</a>
 		</div>
 
 		<div class="gallery">
 			<a target="_blank" href="images/SV.png">
-			<img src="Images/SV.png" alt="Silicon Valley" width="400">
+			<img id="myImg" src="Images/SV.png" alt="Silicon Valley" width="300" height="400">
 			</a>
 		</div>
 
 		<div class="gallery">
 			<a target="_blank" href="images/himym.jpg">
-			<img src="Images/himym.jpg" alt="How I Met Your Mother" width="400">
+			<img id="myImg" src="Images/himym.jpg" alt="How I Met Your Mother" width="300">
+			</a>
+		</div>
+
+		<div class="gallery">
+			<a target="_blank" href="images/breaking_bad.jpg">
+			<img id="myImg" src="Images/breaking_bad.jpg" alt="Breaking Bad" width="300">
+			</a>
+		</div>
+
+		<div class="gallery">
+			<a target="_blank" href="images/himym.jpg">
+			<img id="myImg" src="Images/hannibal.jpg" alt="Hannibal" width="300">
 			</a>
 		</div>
 
 
-
-
-
 	</div>
+
+	<footer class="foot">
+			<p>Designed and Coded with <img id="bottom-bar" src="http://www.freeiconspng.com/uploads/coffee-icon-png-29.png" width="40px"> and <img id="bottom-bar" src="https://freeiconshop.com/wp-content/uploads/edd/heart-curvy-outline-filled.png" width="30px">by <a href="https://www.facebook.com/profile.php?id=100011717350854"> Shaant Minhas</a></p>
+	</footer>
+
+
+
 
 </body>
 </html>
