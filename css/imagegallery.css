@@ -29,10 +29,10 @@ nav a{
 }
 
 nav a:hover{
-	background-color: #555;
+	background-color: #555; /* black(for writing) */
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 500px){
 
 	nav ul{
 		display: flex;
@@ -66,6 +66,10 @@ nav a:hover{
 	border-radius: 10px;
 	cursor: pointer;
 	transition: 0.5s;
+	-webkit-box-shadow:10px 10px 5px #888888; /* Safari  */ 
+	-moz-box-shadow:10px 10px 5px #888888; /* mozilla */
+	
+	box-shadow: 10px 10px 5px #888888;
 }
 
 #myImg:hover {opacity: 0.9;}
@@ -76,9 +80,10 @@ nav a:hover{
 	padding-top: 60px;
 	padding-bottom: 60px;
 	font-size: 30px;
-	background-color: #FFAE19;
-	color: #fff;
+	background-color: #EAF5F8; /*light blue */
+	color: #555;
 	margin: 100px;
+	
 }
 
 h1{
@@ -89,14 +94,14 @@ h1{
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #FFAE19;
-	color: #eee;
+	background-color: #333; /* grey */
+	color: #ffffff;
 	font-size: 20px;
 	margin-top: 30px;
 }
 
 .foot a{
-	color: #eee;
+	color: #ffffff;
 	text-decoration: none;
 }
 
